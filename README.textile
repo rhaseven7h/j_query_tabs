@@ -11,10 +11,10 @@ h1. Examples (in HAML, but it's the same in ERB)
 p. Regular Tabs:
 
 bc.. - content_tabs do |tabs|
-    - tabs.add_tab 'Tab One' do
-      %p Tab One Content
-    - tabs.add_tab 'Tab Two' do
-      %p Tab Two Content
+  - tabs.add_tab 'Tab One' do
+    %p Tab One Content
+  - tabs.add_tab 'Tab Two' do
+    %p Tab Two Content
  
 p. Nested Tabs:
 
