@@ -2,6 +2,9 @@ h1. JQueryTabs
 
 p. Very simple helper to use jQuery-UI tabs, the Rails-way.
 
+h1. Installation
+
+bc. script/plugin install git://github.com/rha7dotcom/j_query_tabs.git 
 
 h1. Example
 
