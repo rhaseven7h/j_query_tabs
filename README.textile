@@ -6,7 +6,7 @@ h1. Installation
 
 bc. script/plugin install git://github.com/rha7dotcom/j_query_tabs.git 
 
-h1. Example
+h1. Examples (in HAML, but it's the same in ERB)
 
 p. Regular Tabs:
 
