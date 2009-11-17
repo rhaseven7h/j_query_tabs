@@ -11,38 +11,36 @@ h1. Examples (in HAML, but it's the same in ERB)
 p. Regular Tabs:
 
 bc.. - content_tabs do |tabs|
-      - tabs.add_tab 'Tab One' do
-        %p Tab One Content
-      - tabs.add_tab 'Tab Two' do
-        %p Tab Two Content
+    - tabs.add_tab 'Tab One' do
+      %p Tab One Content
+    - tabs.add_tab 'Tab Two' do
+      %p Tab Two Content
  
 p. Nested Tabs:
 
 bc.. - content_tabs do |tabs|
-      - tabs.add_tab 'First Tab' do
-        - content_tabs do |subtab1|
-          - subtab1.add_tab 'First Sub Tab 1' do
-            %p First Tab, Sub Tab 1
-          - subtab1.add_tab 'First Sub Tab 2' do
-            %p First Tab, Sub Tab 2
-      - tabs.add_tab 'Second Tab' do
-        - content_tabs do |subtab2|
-          - subtab2.add_tab 'Second Sub Tab 1' do
-            %p Second Tab, Sub Tab 1
-          - subtab2.add_tab 'Second Sub Tab 2' do
-            %p Second Tab, Sub Tab 2
+  - tabs.add_tab 'First Tab' do
+    - content_tabs do |subtab1|
+      - subtab1.add_tab 'First Sub Tab 1' do
+        %p First Tab, Sub Tab 1
+      - subtab1.add_tab 'First Sub Tab 2' do
+        %p First Tab, Sub Tab 2
+  - tabs.add_tab 'Second Tab' do
+    - content_tabs do |subtab2|
+      - subtab2.add_tab 'Second Sub Tab 1' do
+        %p Second Tab, Sub Tab 1
+      - subtab2.add_tab 'Second Sub Tab 2' do
+        %p Second Tab, Sub Tab 2
 
 p. ID-specified Tabs
 
 bc.. - content_tabs :id => 'my_tabs' do |tabs|
-      - tabs.add_tab 'First Tab', :id => 'my_subtab_1' do
-        %p Tab 1 Content
-      - tabs.add_tab 'Second Tab', :id => 'my_subtab_2' do
-        %p Tab 2 Content
-      - tabs.add_tab 'Third Tab', :id => 'my_subtab_3' do
-        %p Tab 3 Content
-
-
+  - tabs.add_tab 'First Tab', :id => 'my_subtab_1' do
+    %p Tab 1 Content
+  - tabs.add_tab 'Second Tab', :id => 'my_subtab_2' do
+    %p Tab 2 Content
+  - tabs.add_tab 'Third Tab', :id => 'my_subtab_3' do
+    %p Tab 3 Content
 
 p. Copyright (c) 2009 Gabriel Medina, released under the MIT license
 
