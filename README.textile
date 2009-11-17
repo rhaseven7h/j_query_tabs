@@ -1,23 +1,21 @@
-JQueryTabs
-==========
+h1. JQueryTabs
 
-Very simple helper to use jQuery-UI tabs, the Rails-way.
+p. Very simple helper to use jQuery-UI tabs, the Rails-way.
 
 
-Example
-=======
+h1. Example
 
-Regular Tabs:
+p. Regular Tabs:
 
-    - content_tabs do |tabs|
+bc.. - content_tabs do |tabs|
       - tabs.add_tab 'Tab One' do
         %p Tab One Content
       - tabs.add_tab 'Tab Two' do
         %p Tab Two Content
  
-Nested Tabs:
+p. Nested Tabs:
 
-    - content_tabs do |tabs|
+bc.. - content_tabs do |tabs|
       - tabs.add_tab 'First Tab' do
         - content_tabs do |subtab1|
           - subtab1.add_tab 'First Sub Tab 1' do
@@ -31,9 +29,9 @@ Nested Tabs:
           - subtab2.add_tab 'Second Sub Tab 2' do
             %p Second Tab, Sub Tab 2
 
-ID-specified Tabs
+p. ID-specified Tabs
 
-    - content_tabs :id => 'my_tabs' do |tabs|
+bc.. - content_tabs :id => 'my_tabs' do |tabs|
       - tabs.add_tab 'First Tab', :id => 'my_subtab_1' do
         %p Tab 1 Content
       - tabs.add_tab 'Second Tab', :id => 'my_subtab_2' do
@@ -43,6 +41,6 @@ ID-specified Tabs
 
 
 
-Copyright (c) 2009 Gabriel Medina, released under the MIT license
+p. Copyright (c) 2009 Gabriel Medina, released under the MIT license
 
 
